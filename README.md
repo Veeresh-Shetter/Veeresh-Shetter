@@ -1,16 +1,37 @@
-## Hi there 👋
+# Hi, I'm Veeresh Shetter 👋
 
-<!--
-**Veeresh-Shetter/Veeresh-Shetter** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**DevOps & Cloud Engineer** focused on Kubernetes, Terraform Infrastructure as Code, GitOps CI/CD, DevSecOps automation, and Prometheus/Grafana observability.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### End-to-End DevOps Portfolio Architecture
+
+```text
+[ Developer Push ] ──► [ GitHub Actions CI + Trivy CVE Gate ] ──► [ GHCR ]
+                                                                     │
+[ AWS EKS v1.31 (Terraform + Checkov + Lambda FinOps) ] ◄── [ Argo CD GitOps ]
+                                │
+                                ▼
+          [ Prometheus + Grafana + Alertmanager (Helm) ]
+```
+
+---
+
+### Featured Production-Grade Projects
+
+| Project | Stack & Engineering Highlights | Repository |
+| :--- | :--- | :--- |
+| **1. Secure GitOps CI/CD Pipeline** | Non-root Go microservice (`~12 MB` Alpine), automated unit tests, **Trivy** `CRITICAL`/`HIGH` security gate, GHCR, and **Argo CD** self-healing sync. | [`gitops-app`](https://github.com/Veeresh-Shetter/gitops-app) |
+| **2. AWS EKS Infrastructure & FinOps** | Modular **Terraform** IaC (`VPC`, private **Amazon EKS v1.31**, remote S3/DynamoDB state), **Checkov** IaC security CI, and **EventBridge + Lambda** nightly auto-scaler. | [`aws-eks-terraform-iac`](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) |
+| **3. Kubernetes Observability Stack** | Helm-managed **Prometheus**, **Grafana**, and **Alertmanager** (`kube-prometheus-stack`) with cross-namespace discovery and custom **PromQL `PrometheusRule`** alerts. | [`k8s-prometheus-grafana-observability`](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) |
+
+---
+
+### Core Technical Skills
+
+* **Cloud & Infrastructure as Code:** AWS (VPC, EKS, IAM, Lambda, EventBridge, S3, DynamoDB), Terraform (Modular IaC, Remote State Locking)
+* **Containers & Orchestration:** Kubernetes, Helm, Docker (Multi-Stage Builds, Non-Root Hardening)
+* **CI/CD & GitOps:** GitHub Actions, Argo CD (Declarative Sync, Automated Pruning & Self-Healing)
+* **Security & FinOps:** Trivy Container Scanning, Checkov Static IaC Analysis, Serverless Cost Optimization
+* **Observability & SRE:** Prometheus, Grafana, Alertmanager, PromQL, `kube-state-metrics`
+* **Languages & Scripting:** Go, Python, Bash, YAML, HCL
