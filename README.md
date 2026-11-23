@@ -2,28 +2,32 @@
 
 **DevOps & Cloud Engineer** focused on Kubernetes, Terraform Infrastructure as Code, GitOps CI/CD, DevSecOps automation, and Prometheus/Grafana observability.
 
+🔗 **[LinkedIn](https://www.linkedin.com/in/veeresh-shetter-412401365/)** • 📧 **[veereshna265@gmail.com](mailto:veereshna265@gmail.com)** • 💻 **[GitHub](https://github.com/Veeresh-Shetter)**
+
 ---
 
 ### End-to-End DevOps Portfolio Architecture
 
-```text
-[ Developer Push ] ──► [ GitHub Actions CI + Trivy CVE Gate ] ──► [ GHCR ]
-                                                                     │
-[ AWS EKS v1.31 (Terraform + Checkov + Lambda FinOps) ] ◄── [ Argo CD GitOps ]
-                                │
-                                ▼
-          [ Prometheus + Grafana + Alertmanager (Helm) ]
+```mermaid
+flowchart LR
+    Dev[Developer Push] -->|Triggers CI| GHA[GitHub Actions + Trivy Scan]
+    GHA -->|Pushes Image| GHCR[(GHCR)]
+    GHA -->|Updates Tag| GitOps[Argo CD GitOps]
+    GitOps -->|Deploys App| EKS[AWS EKS v1.31 Cluster]
+    Terraform[Terraform IaC + Checkov] -->|Provisions| EKS
+    FinOps[EventBridge + Lambda] -->|Nightly Scale-to-Zero| EKS
+    EKS -->|Scrapes Metrics| Prom[Prometheus + Grafana + Alertmanager]
 ```
 
 ---
 
 ### Featured Production-Grade Projects
 
-| Project | Stack & Engineering Highlights | Repository |
+| Project | Stack & Engineering Highlights | Live Proof & Code |
 | :--- | :--- | :--- |
-| **1. Secure GitOps CI/CD Pipeline** | Non-root Go microservice (`~12 MB` Alpine), automated unit tests, **Trivy** `CRITICAL`/`HIGH` security gate, GHCR, and **Argo CD** self-healing sync. | [`gitops-app`](https://github.com/Veeresh-Shetter/gitops-app) |
-| **2. AWS EKS Infrastructure & FinOps** | Modular **Terraform** IaC (`VPC`, private **Amazon EKS v1.31**, remote S3/DynamoDB state), **Checkov** IaC security CI, and **EventBridge + Lambda** nightly auto-scaler. | [`aws-eks-terraform-iac`](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) |
-| **3. Kubernetes Observability Stack** | Helm-managed **Prometheus**, **Grafana**, and **Alertmanager** (`kube-prometheus-stack`) with cross-namespace discovery and custom **PromQL `PrometheusRule`** alerts. | [`k8s-prometheus-grafana-observability`](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) |
+| **1. Secure GitOps CI/CD Pipeline** | Non-root Go microservice (`~12 MB` Alpine), automated unit tests, **Trivy** `CRITICAL`/`HIGH` CVE gate, GHCR, and **Argo CD** self-healing sync. | [`gitops-app`](https://github.com/Veeresh-Shetter/gitops-app) |
+| **2. AWS EKS Infrastructure & FinOps** | Modular **Terraform** IaC (`VPC`, private **Amazon EKS v1.31**, remote S3/DynamoDB state), **Checkov** IaC security CI, and **EventBridge + Lambda** nightly auto-scaler. | [`aws-eks-terraform-iac`](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) • [AWS Screenshots](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) |
+| **3. Kubernetes Observability Stack** | Helm-managed **Prometheus**, **Grafana**, and **Alertmanager** (`kube-prometheus-stack`) with cross-namespace discovery and custom **PromQL `PrometheusRule`** alerts. | [`k8s-prometheus-grafana-observability`](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) • [Grafana Dashboards](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) |
 
 ---
 
