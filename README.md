@@ -2,7 +2,10 @@
 
 **DevOps & Cloud Engineer** focused on Kubernetes, Terraform Infrastructure as Code, GitOps CI/CD, DevSecOps automation, and Prometheus/Grafana observability.
 
-🔗 **[LinkedIn](https://www.linkedin.com/in/veeresh-shetter-412401365/)** • 📧 **[veereshna265@gmail.com](mailto:veereshna265@gmail.com)** • 💻 **[GitHub](https://github.com/Veeresh-Shetter)**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Veeresh_Shetter-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/veeresh-shetter-412401365/)
+[![Email](https://img.shields.io/badge/Email-veereshna265%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:veereshna265@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Veeresh--Shetter-181717?style=flat&logo=github&logoColor=white)](https://github.com/Veeresh-Shetter)
+
 
 ---
 
