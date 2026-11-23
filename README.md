@@ -29,8 +29,8 @@ flowchart LR
 | Project | Stack & Engineering Highlights | Live Proof & Code |
 | :--- | :--- | :--- |
 | **1. Secure GitOps CI/CD Pipeline** | Non-root Go microservice (`~12 MB` Alpine), automated unit tests, **Trivy** `CRITICAL`/`HIGH` CVE gate, GHCR, and **Argo CD** self-healing sync. | [`gitops-app`](https://github.com/Veeresh-Shetter/gitops-app) |
-| **2. AWS EKS Infrastructure & FinOps** | Modular **Terraform** IaC (`VPC`, private **Amazon EKS v1.31**, remote S3/DynamoDB state), **Checkov** IaC security CI, and **EventBridge + Lambda** nightly auto-scaler. | [`aws-eks-terraform-iac`](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) • [AWS Screenshots](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) |
-| **3. Kubernetes Observability Stack** | Helm-managed **Prometheus**, **Grafana**, and **Alertmanager** (`kube-prometheus-stack`) with cross-namespace discovery and custom **PromQL `PrometheusRule`** alerts. | [`k8s-prometheus-grafana-observability`](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) • [Grafana Dashboards](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) |
+| **2. AWS EKS Infrastructure & FinOps** | Modular **Terraform** IaC (`VPC`, private **Amazon EKS v1.31**, remote S3/DynamoDB state), **Checkov** IaC security CI, and **EventBridge + Lambda** nightly auto-scaler. | [`aws-eks-terraform-iac`](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac) • [AWS Screenshots](https://github.com/Veeresh-Shetter/aws-eks-terraform-iac/tree/main/assets) |
+| **3. Kubernetes Observability Stack** | Helm-managed **Prometheus**, **Grafana**, and **Alertmanager** (`kube-prometheus-stack`) with cross-namespace discovery and custom **PromQL `PrometheusRule`** alerts. | [`k8s-prometheus-grafana-observability`](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability) • [Grafana Dashboards](https://github.com/Veeresh-Shetter/k8s-prometheus-grafana-observability/tree/main/screenshots) |
 
 ---
 
